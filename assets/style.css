@@ -162,7 +162,7 @@ section{padding:74px 0}
 }
 
 /* ---------- gallery ---------- */
-.gal{display:grid;grid-template-columns:1.55fr 1fr;gap:16px}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
 .gal .shot{
   border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#0d0d10;
   transition:border-color .22s,box-shadow .22s;position:relative;
@@ -175,7 +175,6 @@ section{padding:74px 0}
 }
 .gal .cap b{color:var(--bright);font-weight:600}
 .gal .cap .n{font-family:var(--mono);font-size:11.5px;color:var(--accent);opacity:.8}
-.gal-side{display:grid;grid-template-rows:1fr 1fr;gap:16px}
 
 /* ---------- steps ---------- */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
