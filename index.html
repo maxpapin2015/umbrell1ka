@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>umbrell1ka — оверлей для Dota 2</title>
+<meta name="description" content="umbrell1ka — оверлей для Dota 2: ESP, автофарм, комбо Инвокера, локальные скины и мини-HUD. Один DLL, никакого общения с сервером.">
+<meta name="theme-color" content="#08080a">
+<meta property="og:title" content="umbrell1ka — оверлей для Dota 2">
+<meta property="og:description" content="ESP, автофарм, комбо Инвокера, локальные скины и мини-HUD. Всё на клиенте.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9750;</text></svg>">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z"/>
+        <path d="M12 12v7a2 2 0 0 0 4 0"/>
+      </svg>
+      <span>umbrell<b>1ka</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Возможности</a>
+      <a href="#shots">Скриншоты</a>
+      <a href="#how">Как работает</a>
+      <a href="#install">Установка</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="assets/download/umbrell1ka.dll" download>Скачать</a>
+    <a class="nav-gh" id="gh-link" href="#">GitHub</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><i class="dot"></i>DX11 overlay · ImGui · один DLL</span>
+      <h1>Всё, что нужно<br>видеть — <em>на экране</em>.</h1>
+      <p class="lead">Оверлей для Dota 2: ESP, автофарм, комбо Инвокера, мини-HUD и скины, которые живут только на твоём клиенте. Без лаунчеров, без аккаунтов, без единого пакета наружу.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="assets/download/umbrell1ka.dll" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>
+          Скачать DLL · 2.5 МБ
+        </a>
+        <a class="btn btn-ghost" href="#install">Как установить</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>0</b>сетевых запросов</div>
+        <div><b>1</b>файл для инжекта</div>
+        <div><b>2</b>языка интерфейса</div>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="assets/img/menu-skins.png" alt="Меню umbrell1ka на странице Vision со скинченджером" width="856" height="628">
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap">
+    <div class="dl">
+      <div>
+        <span class="eyebrow"><i class="dot"></i>UMBRELL1KA.DLL · 2.5 МБ</span>
+        <h2>Скачать сборку</h2>
+        <p>Готовая DLL под текущий клиент Dota 2. Инжектор в комплект не входит — подойдёт любой, который умеет работать с 64-битным процессом.</p>
+        <div class="dl-actions">
+          <a class="btn btn-primary" href="assets/download/umbrell1ka.dll" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>
+            umbrell1ka.dll
+          </a>
+          <a class="btn btn-ghost" href="assets/download/checksums.txt" target="_blank" rel="noopener">Контрольная сумма</a>
+        </div>
+      </div>
+      <dl class="dl-meta">
+        <div><dt>Файл</dt><dd>umbrell1ka.dll</dd></div>
+        <div><dt>Размер</dt><dd>2 537 472 байт</dd></div>
+        <div><dt>Архитектура</dt><dd>x64 · /MT</dd></div>
+        <div><dt>SHA-256</dt><dd class="mono">c7f1e9cf…bfa8</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Возможности</span>
+      <h2>Шесть блоков, которые закрывают игру</h2>
+      <p>Каждый переключатель — это конкретное действие на клиенте, а не картинка ради скриншота. Всё настраивается с клавиатуры и мыши прямо в оверлее.</p>
+    </div>
+
+    <div class="feat-grid">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="2.6"/></svg></div>
+        <h3>ESP</h3>
+        <p>Герои, рамки, кулдауны способностей, дистанция, превью скиллов. Отдельно — варды, Рошан и крипы.</p>
+        <div class="kv"><span class="chip">герои</span><span class="chip">кд</span><span class="chip">варды</span></div>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M5 8h14"/><path d="M7 8v11h10V8"/><path d="M10 12h4"/></svg></div>
+        <h3>Фарм</h3>
+        <p>Маркеры ластхита и деная, авто-ластхит, авто-денай, авто-атака и фарм-бот по своему лесу с возвратом на фонтан.</p>
+        <div class="kv"><span class="chip">last hit</span><span class="chip">deny</span><span class="chip">farm bot</span></div>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h6l-1 8 9-12h-6l1-8Z"/></svg></div>
+        <h3>Комбо Инвокера</h3>
+        <p>Одна кнопка на прокаст: сферы, вызов, скиллы — в нужном порядке. Скорость каста регулируется ползунком.</p>
+        <div class="kv"><span class="chip">invoker</span><span class="chip">cast speed</span></div>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1 12H5L4 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg></div>
+        <h3>Скины локально</h3>
+        <p>Подмена defindex у wearables твоего героя, ванильная модель, варианты стилей и зеркало выбора из арсенала.</p>
+        <div class="kv"><span class="chip">wearable swap</span><span class="chip">picker</span></div>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><path d="M6 7.5h4"/><path d="M16 7.5h2"/><path d="M3 15h10"/><path d="M3 19h6"/></svg></div>
+        <h3>Мини-HUD</h3>
+        <p>Компактная плашка в углу: FPS, пинг, выбранный скин и статус применения. Сворачивается в точку.</p>
+        <div class="kv"><span class="chip">fps</span><span class="chip">ping</span><span class="chip">skin state</span></div>
+      </article>
+
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+        <h3>Интерфейс</h3>
+        <p>Шесть тем, свой акцентный цвет, масштаб, длительность анимаций, поиск по настройкам и перебайнды.</p>
+        <div class="kv"><span class="chip">themes</span><span class="chip">binds</span><span class="chip">ru / en</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="shots">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Скриншоты</span>
+      <h2>Так это выглядит в бою</h2>
+      <p>Отрисовка оверлея идёт поверх кадра игры: меню можно возить мышью, страницы листаются колесом, всё перерисовывается в реальном времени.</p>
+    </div>
+
+    <div class="gal">
+      <figure class="shot" style="margin:0">
+        <img src="assets/img/menu-esp.png" alt="Страница ESP" width="856" height="628">
+        <figcaption class="cap"><span class="n">01</span><b>ESP</b> — герои, кулдауны, карта, крипы</figcaption>
+      </figure>
+      <div class="gal-side">
+        <figure class="shot" style="margin:0">
+          <img src="assets/img/skin-picker.png" alt="Окно выбора скина" width="468" height="604">
+          <figcaption class="cap"><span class="n">02</span><b>Skin Picker</b> — 60 героев, по слоту</figcaption>
+        </figure>
+        <figure class="shot" style="margin:0">
+          <img src="assets/img/hud.png" alt="Мини-HUD" width="400" height="472">
+          <figcaption class="cap"><span class="n">03</span><b>Мини-HUD</b> — FPS, пинг, скин</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="gal" style="margin-top:16px">
+      <figure class="shot" style="margin:0">
+        <img src="assets/img/menu-skins.png" alt="Страница Skin Changer" width="856" height="628">
+        <figcaption class="cap"><span class="n">04</span><b>Vision</b> — туман, свечение, скинченджер</figcaption>
+      </figure>
+      <figure class="shot" style="margin:0">
+        <img src="assets/img/menu-automation.png" alt="Страница автоматизации" width="856" height="628">
+        <figcaption class="cap"><span class="n">05</span><b>Automation</b> — фарм, защита, матч, комбо</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Как это работает</span>
+      <h2>Три шага, всё на клиенте</h2>
+      <p>DLL цепляется к DXGI Present, рисует оверлей через ImGui и читает только те структуры игры, которые уже лежат в памяти твоего процесса.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Хук кадра</h3>
+        <p>Перехват <code>Present</code> в <code>dxgi.dll</code>. Оверлей рисуется в том же кадре, что и игра — без второй очереди и без просадок.</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Чтение состояния</h3>
+        <p>Герои, крипы, варды, кулдауны и wearables берутся из сущностей и схемы клиента. Сеть не используется вообще.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Действие</h3>
+        <p>Клики уходят в окно игры сообщениями Win32, скины — записью defindex в память. Курсор физически не двигается.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="honest">
+      <div>
+        <h2>Что оверлей <span style="color:var(--accent)">не</span> делает</h2>
+        <p>Честный список — чтобы не было сюрпризов после установки.</p>
+        <ul>
+          <li><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Не ходит на серверы Valve: ни логина, ни отправки инвентаря, ни «активации».</span></li>
+          <li><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Не разблокирует предметы на аккаунте. Владение — факт на сервере, память клиента его не переписывает.</span></li>
+          <li><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Скины видишь только ты: другие игроки получают от сервера обычную модель героя.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2 style="font-size:20px">Что делает</h2>
+        <ul>
+          <li><svg class="ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg><span>Меняет то, что уже принадлежит твоему клиенту: камеру, ввод, отрисовку, локальные wearables.</span></li>
+          <li><svg class="ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg><span>Возвращает всё назад при выключении тумблера и при выгрузке DLL — оригинальные значения хранятся в памяти.</span></li>
+          <li><svg class="ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></svg><span>Работает поверх окна игры в любом режиме — и в матче, и в предпросмотре героя.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Установка</span>
+      <h2>Сборка и запуск</h2>
+      <p>Нужны Visual Studio Build Tools (MSVC) и Python — только для вспомогательных скриптов.</p>
+    </div>
+
+    <div class="steps" style="grid-template-columns:repeat(2,1fr)">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Собрать DLL</h3>
+        <p>Батник вызывает <code>cl</code> и складывает результат в <code>build\</code>.</p>
+<pre><code><span class="c">:: из корня репозитория</span>
+build.bat
+
+<span class="c">:: результат</span>
+build\<span class="k">umbrell1ka.dll</span></code></pre>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Запустить игру</h3>
+        <p>Одна копия Dota 2 — второй <code>dota2.exe</code> ломает рендер. Инжект — в уже живой процесс.</p>
+<pre><code><span class="c">:: проверить, что процесс один</span>
+tasklist | findstr dota2
+
+<span class="c">:: инжект любым инжектором</span>
+injector.exe --pid &lt;PID&gt; --dll umbrell1ka.dll</code></pre>
+      </div>
+    </div>
+
+    <div class="steps" style="grid-template-columns:repeat(3,1fr);margin-top:16px">
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Открыть меню</h3>
+        <p><code>INSERT</code> — меню. Клавиша меняется на странице Binds вместе с клавишей выгрузки.</p>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <h3>Настроить</h3>
+        <p>Категории слева, страницы в сайдбаре, поиск сверху. Настройки сохраняются между запусками.</p>
+      </div>
+      <div class="step">
+        <div class="num">05</div>
+        <h3>Выгрузить</h3>
+        <p><code>END</code> возвращает все изменённые значения и снимает хук — клиент остаётся чистым.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">FAQ</span>
+      <h2>Вопросы, которые задают первыми</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Почему скин вижу только я?</summary>
+        <p>Внешний вид героя складывается из предметов, которые выдаёт сервер. Оверлей меняет defindex уже надетых wearables в памяти клиента — модель пересобирается локально. Другие игроки получают от сервера твой настоящий набор, поэтому видят стандартную модель. Это ограничение архитектуры игры, а не настройка.</p>
+      </details>
+      <details>
+        <summary>Весь арсенал будет открыт?</summary>
+        <p>В самом оверлее — да. Каталог скинов собран из <code>items_game.txt</code> целиком: 9 576 предметов по всем героям и слотам, включая платные иммортали и сеты, которые на аккаунте не куплены. Всё это можно выбрать в Skin Picker и надеть на героя — сервер и профиль при этом не трогаются.</p>
+        <p style="margin-top:10px">Сетка арсенала внутри клиента Valve — другое: она строится из предметов, которые сервер прислал аккаунту. Её вид можно подменить только хуком клиентских структур UI, и это чисто косметика — предмет не станет купленным ни в профиле, ни в инвентаре.</p>
+      </details>
+      <details>
+        <summary>Как быстро чинится после патча?</summary>
+        <p>Офсеты схемы и сущностей лежат в одном месте. Большинство патчей ломают только их — тогда обновляется таблица, а логика остаётся. Консольные команды ищутся по имени, а не по адресу, поэтому их переносить не нужно.</p>
+      </details>
+      <details>
+        <summary>Двигает ли автофарм мышь?</summary>
+        <p>Нет. Клики и приказы уходят сообщениями в окно игры, физический курсор остаётся там, где ты его оставил. Камера тоже не уезжает: клики за границей безопасной зоны отбрасываются, камеру переставляет только фарм-бот.</p>
+      </details>
+      <details>
+        <summary>Работает в предпросмотре героя?</summary>
+        <p>Да. В арсенале оверлей цепляется к юниту предпросмотра, а режим «Armory Mirror» подхватывает надетый там предмет как выбор для матча.</p>
+      </details>
+      <details>
+        <summary>Нужен ли интернет?</summary>
+        <p>Только для самой Dota 2. Оверлей не делает ни одного исходящего запроса: ни телеметрии, ни проверки лицензии, ни загрузки конфигов. Всё, что он читает и пишет, находится в твоём процессе.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#top" style="margin-bottom:12px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px;color:var(--accent)">
+          <path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z"/><path d="M12 12v7a2 2 0 0 0 4 0"/>
+        </svg>
+        <span>umbrell<b>1ka</b></span>
+      </a>
+      <small>Проект для личного использования и изучения внутренностей клиента. Dota 2 — торговая марка Valve Corporation; сайт не связан с Valve и не распространяет её файлы. Использование стороннего ПО в онлайн-играх нарушает пользовательское соглашение и может привести к блокировке аккаунта. Решение принимаешь ты.</small>
+    </div>
+    <div class="foot-links">
+      <a href="#features">Возможности</a>
+      <a href="#install">Установка</a>
+      <a id="gh-link-2" href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
